@@ -6,23 +6,30 @@ import Styled, { css } from "styled-components";
 
 export const Wrapper = Styled.div`
 max-width: 800px; 
-margin: 0 auto; 
+  margin: 0 auto; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 `;
 export const Header = Styled.header`
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   font-family: monospace;
   font-size: 23px;
   font-weight: 700;
   padding: 15px;
-  color: #fff;
-  /* border-bottom: 2px solid #000;  */
+  color: #000;
+  border-bottom: 2px solid #000; 
   margin-bottom: 15px;
-  background: #000; 
+  /* background: #000;  */
   align-items: center;
+  span {
+    display: inline-flex; 
+  }
+  span:first-child {
+    margin-right: 10px;
+    margin-top: 2px
+  }
 `;
 export const Content = Styled.div`
   flex-grow: 1;
@@ -30,10 +37,10 @@ export const Content = Styled.div`
 export const Footer = Styled.footer`
   padding: 15px 0; 
   font-size: 15px;
-  text-align: center; 
   margin-top: 20px;
+  border-top: 1px solid #ddd
   a {
-    margin: 0 10px; 
+    margin-right: 15px; 
   }
 `;
 
@@ -92,14 +99,16 @@ export const ColorShades = Styled.div`
   margin-top: 20px;
   display: flex;
   flex-direction: column; 
-  background-image: url(https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif);
+  background-image: url(https://media.giphy.com/media/BSx6mzbW1ew7K/giphy.gif);
   background-repeat: no-repeat; 
-  background-size: cover; 
+  background-size: cover;
+  background-position: -100px -170px; 
 `;
 export const ColorRow = Styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 10fr minmax(100px, 6fr);
   flex-grow: 1;
-  align-items: center; 
+  line-height: 40px;
   margin-bottom: 0;  
 `;
 export const ColorShade = Styled.div`

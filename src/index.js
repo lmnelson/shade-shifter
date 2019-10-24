@@ -107,6 +107,9 @@ class App extends React.Component {
       <div className="App">
         <Wrapper>
           <Header>
+            <span role="img" aria-label="rainbow">
+              🏳️‍🌈
+            </span>
             <span>Shade Shifter</span>
           </Header>
           <Content>
