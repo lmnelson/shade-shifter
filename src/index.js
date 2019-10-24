@@ -142,10 +142,18 @@ class App extends React.Component {
             </ColorShades>
           </Content>
           <Footer>
-            <a href="https://www.linkedin.com/in/leemnelson/" target="_blank">
-              Lee Nelson
-            </a>
-            <a href="#">Source Code</a>
+            <div>
+              <a href="https://www.linkedin.com/in/leemnelson/" target="_blank">
+                Lee Nelson
+              </a>
+              <a href="https://github.com/lmnelson/shade-shifter">
+                Source Code
+              </a>
+            </div>
+            <div>
+              A visual UI for{" "}
+              <a href="https://polished.js.org">✨Polished JS</a>
+            </div>
           </Footer>
         </Wrapper>
       </div>

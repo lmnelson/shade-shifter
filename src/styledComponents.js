@@ -35,10 +35,14 @@ export const Content = Styled.div`
   flex-grow: 1;
 `;
 export const Footer = Styled.footer`
-  padding: 15px 0; 
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px 0; 
   font-size: 15px;
   margin-top: 20px;
   border-top: 1px solid #ddd
+  display: flex;
+  flex-direction: row;
   a {
     margin-right: 15px; 
   }
