@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Helmet } from "react-helmet";
 import {
   Wrapper,
   Header,
@@ -15,7 +16,7 @@ import {
   ColorHex,
   ColorName
 } from "./styledComponents";
-import { darken, lighten, opacify, rgba } from "polished";
+import { darken, lighten, rgba } from "polished";
 
 import "./styles.css";
 
@@ -105,6 +106,19 @@ class App extends React.Component {
     let shades = this.state.shades;
     return (
       <div className="App">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Shade Shifter</title>
+          <link
+            rel="icon"
+            type="image/png"
+            href="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f3f3-1f308.png"
+          ></link>
+          <meta
+            name="description"
+            content="A Visual UI for Polished JS so designers and developers can stay in-sync"
+          />
+        </Helmet>
         <Wrapper>
           <Header>
             <span role="img" aria-label="rainbow">
